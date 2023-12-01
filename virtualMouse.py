@@ -1,7 +1,7 @@
 import cv2
 import mediapipe as mp
 import pyautogui
-video = cv2.VideoCapture("http://192.168.13.98:8080/video")
+video = cv2.VideoCapture(0) # it can be either zero or an Ip address of any server connected camera
 hand_detector = mp.solutions.hands.Hands()
 drawing_utils = mp.solutions.drawing_utils
 screen_width, screen_height = pyautogui.size()
